@@ -19,16 +19,16 @@ FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-sources/ch2-thm-pythagore/%.pdf: sources/ch2-thm-pythagore/%.ipe
+4.1_Pythagore/sources/%.pdf: 4.1_Pythagore/sources/%.ipe
 	ipetoipe -pdf $<
 	
 
 # Chapitre 1 - Théorème de Pythagore
 
 4.1_pythagore:
-	pdflatex tex/c4_ch1_pythagore.tex
-	pdflatex tex/c4_ch1_pythagore.tex
-	mv c4_ch1_pythagore.pdf '$(PDFDIR)'/c4-ch1_-pythagore.pdf
+	pdflatex 4.1_Pythagore/tex/c4_ch1_pythagore.tex
+	pdflatex 4.1_Pythagore/tex/c4_ch1_pythagore.tex
+	mv 4.1_pythagore.pdf '$(PDFDIR)'/4.1_pythagore.pdf
 	
 
 
