@@ -4,7 +4,7 @@ _pdf/*
 # temp files
 *.fdb_latexmk
 *.fls
-*.syntectex.gz
+*.synctex.gz
 *~
 *#
 *.log
