@@ -1,0 +1,15 @@
+# pdf
+_pdf/*
+
+# temp files
+*~
+*#
+*.log
+*.aux
+*.dvi
+*.thm
+*.toc
+*.out
+*.pdf
+*.nav
+*.snm
