@@ -1,6 +1,6 @@
 # Dossiers
 CODE := $(shell pwd)
-PDFDIR = ../../_pdf/4_quatrieme
+PDFDIR = ../_pdf/4_quatrieme
 THEME = 
 
 # Visualiser les pdf
@@ -19,13 +19,13 @@ FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-4.1_pythagore/sources/%.pdf: 4.1_pythagore/sources/%.ipe
+4x1_pythagore/sources/%.pdf: 4.1_pythagore/sources/%.ipe
 	ipetoipe -pdf $<
 	
 
 # Chapitre 1 - Théorème de Pythagore
 
-4.1_pythagore:
+4x1_pythagore:
 	pdflatex 4.1_pythagore/tex/4.1_pythagore.tex
 	pdflatex 4.1_pythagore/tex/4.1_pythagore.tex
 	mv 4.1_pythagore.pdf '$(PDFDIR)'/4.1_pythagore.pdf
