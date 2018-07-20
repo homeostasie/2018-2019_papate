@@ -30,7 +30,10 @@ img: $(FIGOBJ)
 	pdflatex 4x1-pythagore/tex/4x1-pythagore.tex
 	mv 4x1-pythagore.pdf '$(PDFDIR)'/4x1-pythagore.pdf
 	
-
+4x1e_pythagore-exo:
+	pdflatex 4x1-pythagore/tex/4x1-pythagore-exo.tex
+	pdflatex 4x1-pythagore/tex/4x1-pythagore-exo.tex
+	mv 4x1-pythagore-exo.pdf '$(PDFDIR)'/4x1-pythagore-exo.pdf
 
 # nettoyage			
 proper:
