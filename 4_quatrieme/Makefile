@@ -40,12 +40,12 @@ img: $(FIGOBJ)
 
 # Chapitre 2 - Trigonométrie
 
-4x1_pythagore:
+4x2_trigonometrie:
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie.tex
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie.tex
 	mv 4x2-trigonometrie.pdf '$(PDFDIR)'/4x2-trigonometrie.pdf
 	
-4x1e_pythagore-exo:
+4x2e_trigonometrie-exo:
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-exo.tex
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-exo.tex
 	mv 4x2-trigonometrie-exo.pdf '$(PDFDIR)'/4x2-trigonometrie-exo.pdf
