@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe )
+FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-pythagore/sources/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -22,6 +22,8 @@ img: $(FIGOBJ)
 4x1-pythagore/sources/%.pdf: 4x1-pythagore/sources/%.ipe
 	ipetoipe -pdf $<
 	
+4x2-trigonometrie/sources/%.pdf: 4x2-trigonometrie/sources/%.ipe
+	ipetoipe -pdf $<
 
 # Chapitre 1 - Théorème de Pythagore
 
@@ -34,6 +36,20 @@ img: $(FIGOBJ)
 	pdflatex 4x1-pythagore/tex/4x1-pythagore-exo.tex
 	pdflatex 4x1-pythagore/tex/4x1-pythagore-exo.tex
 	mv 4x1-pythagore-exo.pdf '$(PDFDIR)'/4x1-pythagore-exo.pdf
+
+
+# Chapitre 2 - Trigonométrie
+
+4x1_pythagore:
+	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie.tex
+	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie.tex
+	mv 4x2-trigonometrie.pdf '$(PDFDIR)'/4x2-trigonometrie.pdf
+	
+4x1e_pythagore-exo:
+	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-exo.tex
+	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-exo.tex
+	mv 4x2-trigonometrie-exo.pdf '$(PDFDIR)'/4x2-trigonometrie-exo.pdf
+
 
 # nettoyage			
 proper:
