@@ -28,8 +28,8 @@ Je repasse à une strucutre par année. Mes classes : Une 6ème, Trois 4ème, Un
 
 ##### Sixième
 
-Chapitre 1 - Bien débuter en géométrie.
-Chapitre 2 - Droites perpendiculaires.
+* Chapitre 1 - Bien débuter en géométrie.
+* Chapitre 2 - Droites perpendiculaires.
 
 ##### Quatrième
 
