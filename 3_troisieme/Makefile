@@ -33,7 +33,6 @@ img: $(FIGOBJ)
 	mv 3x1-statistiques-dm1.pdf '$(PDFDIR)'/3x1-statistiques-dm1.pdf
 	
 
-
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
