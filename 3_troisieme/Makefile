@@ -32,7 +32,10 @@ img: $(FIGOBJ)
 	pdflatex 3x1-statistiques/tex/3x1-statistiques-dm1.tex
 	mv 3x1-statistiques-dm1.pdf '$(PDFDIR)'/3x1-statistiques-dm1.pdf
 	
-
+3x1_statistiques-ie1:
+	pdflatex 3x1-statistiques/tex/3x1-statistiques-ie1.tex
+	pdflatex 3x1-statistiques/tex/3x1-statistiques-ie1.tex
+	mv 3x1-statistiques-ie1.pdf '$(PDFDIR)'/3x1-statistiques-ie1.pdf
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
