@@ -37,10 +37,15 @@ img: $(FIGOBJ)
 	pdflatex 4x1-pythagore/tex/4x1-pythagore-exo.tex
 	mv 4x1-pythagore-exo.pdf '$(PDFDIR)'/4x1-pythagore-exo.pdf
 
-4x1ie_pythagore:
+4x1ie_calc:
 	pdflatex 4x1-pythagore/tex/4x1-pythagore-ie-calculer.tex
 	pdflatex 4x1-pythagore/tex/4x1-pythagore-ie-calculer.tex
 	mv 4x1-pythagore-ie-calculer.pdf '$(PDFDIR)'/4x1-pythagore-ie-calculer.pdf
+
+4x1ie_chap:
+	pdflatex 4x1-pythagore/tex/4x1-pythagore-ie-chap.tex
+	pdflatex 4x1-pythagore/tex/4x1-pythagore-ie-chap.tex
+	mv 4x1-pythagore-ie-chap.pdf '$(PDFDIR)'/4x1-pythagore-ie-chap.pdf
 
 # Chapitre 2 - Trigonométrie
 
