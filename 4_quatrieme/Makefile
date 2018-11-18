@@ -59,7 +59,11 @@ img: $(FIGOBJ)
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-exo.tex
 	mv 4x2-trigonometrie-exo.pdf '$(PDFDIR)'/4x2-trigonometrie-exo.pdf
 
-
+4x2ie_chap:
+	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-ie.tex
+	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-ie.tex
+	mv 4x2-trigonometrie-ie.pdf '$(PDFDIR)'/4x2-trigonometrie-ie.pdf
+	
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
