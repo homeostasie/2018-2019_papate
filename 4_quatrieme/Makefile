@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-pythagore/sources/*.ipe)
+FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -63,7 +63,7 @@ img: $(FIGOBJ)
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-ie.tex
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-ie.tex
 	mv 4x2-trigonometrie-ie.pdf '$(PDFDIR)'/4x2-trigonometrie-ie.pdf
-	
+
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
