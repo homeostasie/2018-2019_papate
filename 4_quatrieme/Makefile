@@ -64,6 +64,28 @@ img: $(FIGOBJ)
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-ie.tex
 	mv 4x2-trigonometrie-ie.pdf '$(PDFDIR)'/4x2-trigonometrie-ie.pdf
 
+# Chapitre 2 - Trigonométrie
+
+4x3_puissances:
+	pdflatex 4x3-puissances/tex/4x3-puissances.tex
+	pdflatex 4x3-puissances/tex/4x3-puissances.tex
+	mv 4x3-puissances.pdf '$(PDFDIR)'/4x3-puissances.pdf
+	
+4x3e_puissances-exo:
+	pdflatex 4x3-puissances/tex/4x3-puissances-exo.tex
+	pdflatex 4x3-puissances/tex/4x3-puissances-exo.tex
+	mv 4x3-trigonometrie-exo.pdf '$(PDFDIR)'/4x3-puissances-exo.pdf
+
+4x3e_puissances-pb:
+	pdflatex 4x3-puissances/tex/4x3-puissances-exo-pb.tex
+	pdflatex 4x3-puissances/tex/4x3-puissances-exo-pb.tex
+	mv 4x3-puissances-exo-pb.pdf '$(PDFDIR)'/4x3-puissances-exo-pb.pdf
+
+4x3ie_chap:
+	pdflatex 4x3-puissances/tex/4x3-puissances-ie.tex
+	pdflatex 4x3-puissances/tex/4x3-puissances-ie.tex
+	mv 4x3-puissances-ie.pdf '$(PDFDIR)'/4x3-puissances-ie.pdf		
+
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
