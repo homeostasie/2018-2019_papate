@@ -19,10 +19,6 @@
 
 ----------------------------------------------------
 
-*Petite bafouille cette année, plutôt que tentative de tout faire propre dès le début.*
-
-Je repasse à une strucutre par année. Mes classes : Une 6ème, Trois 4ème, Une 3ème. Je tente un dossier biographie pour les instants cultures.
-
 
 #### Progression :
 
@@ -30,14 +26,21 @@ Je repasse à une strucutre par année. Mes classes : Une 6ème, Trois 4ème, Un
 
 * Chapitre 1 - Bien débuter en géométrie.
 * Chapitre 2 - Droites perpendiculaires.
+* Chapitre 3 - Fractions et graduations.
+* Chapitre 4 - Droites parallèles et symétrie.
 
 ##### Quatrième
 
-Chapitre 1 - Pythagore
+* Chapitre 1 - Pythagore
+* Chapitre 2- Trigonométrie
+* Chapitre 3 - Puissance
 
 ##### Troisième
 
-Chapitre 1 - Statistiques
+* Chapitre 1 - Statistiques
+* Chapitre 2 - Théorème de Thalès
+* Chapitre 3 - Notion de fonctions
+* Chapitre 4 - Arithmétique
 
 ----------------------------------------------------
 
@@ -49,6 +52,7 @@ Chapitre 1 - Statistiques
 
 * - **LAFOND Thomas - thomas.lafond@ac-lyon.fr / thom@homeostasie.eu**
 * - **http://www-irem.univ-paris13.fr/site_spip/spip.php?article817**
+* - **Pyromaths - https://www.pyromaths.org/** 
 
 
 ## Licence
