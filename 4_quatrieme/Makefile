@@ -64,7 +64,7 @@ img: $(FIGOBJ)
 	pdflatex 4x2-trigonometrie/tex/4x2-trigonometrie-ie.tex
 	mv 4x2-trigonometrie-ie.pdf '$(PDFDIR)'/4x2-trigonometrie-ie.pdf
 
-# Chapitre 2 - Trigonométrie
+# Chapitre 3 - Puissance
 
 4x3_puissances:
 	pdflatex 4x3-puissances/tex/4x3-puissances.tex
@@ -85,6 +85,14 @@ img: $(FIGOBJ)
 	pdflatex 4x3-puissances/tex/4x3-puissances-ie.tex
 	pdflatex 4x3-puissances/tex/4x3-puissances-ie.tex
 	mv 4x3-puissances-ie.pdf '$(PDFDIR)'/4x3-puissances-ie.pdf		
+
+
+# Chapitre 4 - Petits problèmes de maths
+
+4x4_ppm:
+	pdflatex 4x4-petits-problemes-maths/tex/4x4-ppm.tex
+	pdflatex 4x4-petits-problemes-maths/tex/4x4-ppm.tex
+	mv 4x4-ppm.pdf '$(PDFDIR)'/4x4-ppm.pdf
 
 # nettoyage			
 proper:
