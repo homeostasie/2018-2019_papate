@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-pythagore/sources/*.ipe)
+FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-pythagore/sources/*.ipe 3xx-dm/sources/dm1/*.ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -21,7 +21,10 @@ img: $(FIGOBJ)
 
 4x1-pythagore/sources/%.pdf: 4x1-pythagore/sources/%.ipe
 	ipetoipe -pdf $<
-	
+
+3xx-dm/sources/dm1/%.pdf: 3xx-dm/sources/dm1/%.ipe
+	ipetoipe -pdf $<
+
 # Chapitre 1 - Théorème de Pythagore
 
 3x1_statistiques-dm1:
@@ -34,7 +37,11 @@ img: $(FIGOBJ)
 	pdflatex 3x1-statistiques/tex/3x1-statistiques-ie1.tex
 	mv 3x1-statistiques-ie1.pdf '$(PDFDIR)'/3x1-statistiques-ie1.pdf
 
-
+3xx_dm1:
+	pdflatex 3xx-dm/tex/3xx-dm1.tex
+	pdflatex 3xx-dm/tex/3xx-dm1.tex
+	mv 3xx-dm1.pdf '$(PDFDIR)'/3xx-dm1.pdf
+	
 hist-ie1:
 	R -q --vanilla < _scripts/bilan-eval.R
 	mv ie1.pdf '$(PDFDIR)'/3x1-hist-ie1.pdf
