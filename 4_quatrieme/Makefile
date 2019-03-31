@@ -13,7 +13,7 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe)
+FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
@@ -24,6 +24,9 @@ img: $(FIGOBJ)
 	
 4x2-trigonometrie/sources/%.pdf: 4x2-trigonometrie/sources/%.ipe
 	ipetoipe -pdf $<
+
+4x6-thales/sources/%.pdf: 4x6-thales/sources/%.ipe
+	ipetoipe -pdf $<	
 
 # Chapitre 1 - Théorème de Pythagore
 
@@ -93,6 +96,18 @@ img: $(FIGOBJ)
 	pdflatex 4x4-petits-problemes-maths/tex/4x4-ppm.tex
 	pdflatex 4x4-petits-problemes-maths/tex/4x4-ppm.tex
 	mv 4x4-ppm.pdf '$(PDFDIR)'/4x4-ppm.pdf
+
+4x4ie_ppm:
+	pdflatex 4x4-petits-problemes-maths/tex/4x4-ppm-ie.tex
+	pdflatex 4x4-petits-problemes-maths/tex/4x4-ppm-ie.tex
+	mv 4x4-ppm-ie.pdf '$(PDFDIR)'/4x4-ppm-ie.pdf
+
+# Chapitre 6 - Théorème de Thalès
+
+4x6ie:
+	pdflatex 4x6-thales/tex/4x6-thales-ie.tex
+	pdflatex 4x6-thales/tex/4x6-thales-ie.tex
+	mv 4x6-thales-ie.pdf '$(PDFDIR)'/4x6-thales-ie.pdf			
 
 # nettoyage			
 proper:
