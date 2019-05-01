@@ -37,10 +37,25 @@ img: $(FIGOBJ)
 	pdflatex 3x1-statistiques/tex/3x1-statistiques-ie1.tex
 	mv 3x1-statistiques-ie1.pdf '$(PDFDIR)'/3x1-statistiques-ie1.pdf
 
+# Chapitre 10 - Fonctions affines et linéaires.
+
+
+
+3x10_droites-ie1:
+	pdflatex 3x10-affines-lineaires/tex/3x10-droites-ie1.tex
+	pdflatex 3x10-affines-lineaires/tex/3x10-droites-ie1.tex
+	mv 3x10-droites-ie1.pdf '$(PDFDIR)'/3x10-droites-ie1.pdf
+
 3xx_dm1:
 	pdflatex 3xx-dm/tex/3xx-dm1.tex
 	pdflatex 3xx-dm/tex/3xx-dm1.tex
 	mv 3xx-dm1.pdf '$(PDFDIR)'/3xx-dm1.pdf
+
+
+3xx_dm2:
+	pdflatex 3xx-dm/tex/3xx-dm2.tex
+	pdflatex 3xx-dm/tex/3xx-dm2.tex
+	mv 3xx-dm2.pdf '$(PDFDIR)'/3xx-dm2.pdf
 	
 hist-ie1:
 	R -q --vanilla < _scripts/bilan-eval.R
