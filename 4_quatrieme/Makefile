@@ -107,7 +107,15 @@ img: $(FIGOBJ)
 4x6ie:
 	pdflatex 4x6-thales/tex/4x6-thales-ie.tex
 	pdflatex 4x6-thales/tex/4x6-thales-ie.tex
-	mv 4x6-thales-ie.pdf '$(PDFDIR)'/4x6-thales-ie.pdf			
+	mv 4x6-thales-ie.pdf '$(PDFDIR)'/4x6-thales-ie.pdf
+
+
+# Chapitre 7 - Équations
+
+4x7ie:
+	pdflatex 4x7-equations/tex/4x7-equations-ie.tex
+	pdflatex 4x7-equations/tex/4x7-equations-ie.tex
+	mv 4x7-equations-ie.pdf '$(PDFDIR)'/4x7-equations-ie.pdf			
 
 # nettoyage			
 proper:
